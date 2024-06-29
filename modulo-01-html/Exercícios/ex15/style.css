@@ -1,0 +1,15 @@
+@charset "utf8"
+p{
+    text-align: justify;
+}
+h1{
+    color: lightslategray;
+
+}
+body{
+    background-color: lightyellow;
+}
+h2{
+    color: lightgrey;
+    background-color: brown;
+}

@@ -1,0 +1,24 @@
+@charset "utf8";
+*{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{text-align: justify;}
+
+body{
+    background-image: linear-gradient(to right,#BDE038,#A3AB78 ,#818274,#10454F);
+} 
+main{
+    background-color: #ffff;border-radius: 5px;box-shadow:black 0.1em 0.1em 0.3em;  /* a minha função box-shadow nao funcinou- pro que ?*/
+    width: 650px;
+    padding: 15px;
+    margin: auto;
+    
+
+}
+h1{
+    color: #10454F;
+    text-align: center;
+    text-shadow:1px 1px 3px #000;/* a minha função text-shadow nao funcinou*/
+}
+h2{color: 
+    #818274;
+}

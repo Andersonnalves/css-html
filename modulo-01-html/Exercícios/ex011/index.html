@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+<h1>Imagems Dinamicas</h1>
+<p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho no seu navegador.</p>
+    
+<picture>
+  <source media="(max-width:750px )" srcset="imagem/famili-p
+  .jpg" type="image/jpg">
+  <source media="(max-width:1050px )" srcset="imagem/famili-m.jpg" type="image/jpg">
+    <img src="Imagem/famili-g.png.jpg" alt="imagems flexível">
+
+<h1>reproduzindo audio</h1>
+<p>vamos aprender a reproduzir audio</p>
+
+<audio src="media/Soulicious-Dyalla.mp3"controls autoplay></audio>
+<!---MP3 - WAV - OGG estes sao os tipos de arquivos -->
+
+<!--outra forma de colocar audio no html 
+
+esta e a forma recomendada-->
+
+<audio controls autoplay preload="metadata" >
+  <source src="media/BluesyVibes(Sting).mp3" type="audio/mpeg">
+  
+  
+</audio>
+
+
+</picture>
+</body>
+</html>

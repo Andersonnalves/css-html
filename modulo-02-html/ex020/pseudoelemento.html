@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /*   SELETORES PARSONALIZADOS
+        # = id
+        . = class
+        : =  pseudo-class
+        :: = pseudo-element
+        > = clildren (filho)
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+
+        a:visited {
+            color: rgb(233, 12, 12);
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+        .linkd{
+            background-color: rgba(137, 43, 226, 0.699);
+        }
+        .linkd::before{
+            content:'[✈]';
+            color: aqua;
+        }
+        .linkd::after {
+            content: '[link]';
+            color: rgb(192, 192, 192);
+            text-decoration: none;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando links</h1> 
+    <ul>
+       <li><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank" class="linkd">
+            linkedin</a></li>
+        
+        <li><a href="https://www.instagram.com/andersonn.aalves/" target="_blank">
+            istagran
+        </a></li>
+       <li><a href="https://www.facebook.com/?campaign_id=1661784632&partner_id=googlesem&gclid=Cj0KCQiAwf39BRCCARIsALXWETzSZcr2k7QRZrpJEdHh9QK_hXBidq9UdhhtAeD3izbUPNv7k1hU9cUaAn5wEALw_wcB"
+            target="_blank ">
+            facebook</a></li>
+        
+
+    </ul>
+</body>
+
+</html>

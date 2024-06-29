@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*
+tudo que em HTML é ID em CSS é # ( so pode um elemento por pagina)
+ tudo que em HTML é CLASS em CSS é .  (pode varios elementos por pagina)
+*/
+ body
+   { background-color:#ca737b;
+      font-size: 18px;
+      font-family: 'Times New Roman', Times, serif;
+   }
+   
+ h1{
+    color: white;
+ }
+ h1#principal{ color:#14F547 ;
+    text-align: center;
+    background-color:#F5142C ;
+ }
+ h2{
+    color: #384B3C
+    ;
+    text-align: center;
+ }
+ p{
+    color: black;
+}
+.basico{ color: #14F547;
+
+
+}
+.intermediario{color:yellow ;
+
+}
+.avancado{color:#F5142C ;
+
+}
+.distaque{
+   background-color: rgba(160, 160, 56, 0.678);
+}
