@@ -1,11 +1,28 @@
 @charset "utf8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
+}
+
+:root{
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+
+    --fonte02: "Ga Maamli", sans-serif;
+
+    --fonte03: 'Caveat', cursive;
+
 }
 html, body{
     min-height: 100vh;
     background-color: rgb(116, 115, 115);
+    font-family: var(--fonte01);
+   
 }
 header{
     background-color: black;
@@ -15,8 +32,9 @@ header{
 }
 header > h1 {
     padding-top: 50px;
-    tex
-    
+    font-family: var(--fonte02);
+    font-size: 10vw
+     ;
 }
 header > p {
     padding-bottom: 50px;
@@ -36,6 +54,13 @@ section{
     padding-bottom: 10vh; 
     line-height: 2em;
     padding-left: 40px;
+    font-family: var(--fonte03);
+    font-size: 3.8vw;
+    
+}
+section > p{
+    padding-bottom: 2.5em
+
 }
 section.normal{
 background-color: rgb(156, 253, 221);
@@ -44,14 +69,31 @@ background-color: rgb(156, 253, 221);
 section.imagem{
     background-color: rgba(0, 0, 0, 0.486);
     color: white;
+    box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.507);
+    /*
+    background-size: cover;
+    background-attachment: fixed;
     
+    podendo ser ultilizado tambem somente aqui na section.imagem direto*/
+}
+section#img01 {background-image:url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+section#img02 {background-image:url(../imagens/background002.jpg);
+    background-position: right bottom;
+    background-size: cover;
+    background-attachment: fixed;
 
 }
 section.imagem >p {
     background-color: rgba(0, 0, 0, 0.562);
-    padding: 5px;px;
-    width: 200px;
+    padding: 5px;
+    display: inline-block;
     border-radius: 5px;
+    text-shadow: 2px 2px 0 black;
 }
 footer{
     background-color: black;
