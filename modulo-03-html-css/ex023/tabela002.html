@@ -1,123 +1,204 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Tabelas </title>
     <style>
-        body{font-family: Arial, Helvetica, sans-serif;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
         }
-        table{
+
+        table {
             width: 500px;
             height: 60px;
             border-collapse: collapse;
-            
+            position: relative;
+
         }
-        th{background-color: lightslategray;}
-        th, td{
-            border: 1px solid black;
+        thead{
+            position: sticky;
+            top: -1px;
+            background-color: #000d1aea;
         
         }
-        tfoot{
+            tbody> tr:nth-child(2n){background-color: lightslategray;
+
+            }
+        caption {
             background-color: lightslategray;
+            color: black;
+        }
+
+        th {
+            background-color: #000d1aea;
+            color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+
+        }
+
+        tfoot {
+            background-color: lightslategray;
+        }
+
+        .nume {
+            text-align: right;
+        }
+
+        .UF {
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
     <h1>
         Usando Tabelas grandes
-    </h1><l-- Anatomia para tabelas grandes.
-Thead
- tr, td, th
-Tbody
- tr, td, th
-Tfoot
- tr, td, th
--->
-<table>
-<thead>
-<tr>
-    <th>Posição</th>
-    <th>UF</th>
-    <th>População</th>
-</tr>
-</thead>
-<tr>
-    <td>1</td>
-    <td>São Paulo</td>
-    <td>45 919 049</td>
-</tr>
-<tr>
-    <td> 2</td>
-    <td> </td>
-    <td> </td>
-</tr>
-<tr>
-    <td> 2</td>
-    <td> </td>
-    <td> </td>
-</tr>
-<tr>
-    <td> 2</td>
-    <td> </td>
-    <td> </td>
-</tr>
-<tr>
-    <td> 2</td>
-    <td> </td>
-    <td> </td>
-</tr>
-<tr>
-    <td> 2</td>
-    <td> </td>
-    <td> </td>
-</tr>
-<tr>
-    <td> 2</td>
-    <td> </td>
-    <td> </td>
-</tr>
-<tr>
-    <td> 2</td>
-    <td> </td>
-    <td> </td>
-</tr>
-<tr>
-    <td> 2</td>
-    <td> </td>
-    <td> </td>
-</tr>
-<tr>
-    <td> 2</td>
-    <td> </td>
-    <td> </td>
-</tr>
-<tr>
-    <td> 2</td>
-    <td> </td>
-    <td> </td>
-</tr>
-<tr>
-    <td> 2</td>
-    <td> </td>
-    <td> </td>
-</tr>
+    </h1><l-- Anatomia para tabelas grandes. Thead tr, td, th Tbody tr, td, th Tfoot tr, td, th -->
+        <table>
+            <caption><strong>População das Unidades Federativas Listadas</strong></caption>
+            <thead>
+                <tr>
+                    <th scope="col" style="width:50px; ">Posição</th>
 
-<tbody>
+                    <th scope="col">UF</th>
 
-</tbody>
-<tfoot>
-    <tr>
-        <td></td>
-        <th> Total de habitantes </th>
-        <td> 00000 </td>
-    </tr>
-
-</tfoot>
+                    <th scope="col" style="width:100px; ">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="UF">São Paulo</td>
+                    <td class="nume">45 919 049</td>
+                </tr>
+                <tr>
+                    <td> 2</td>
+                    <td class="UF"> Minas Gerais </td>
+                    <td class="nume"> 21.168.791</td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td class="UF"> Rio de Janeiro</td>
+                    <td class="nume">17.264.943 </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="UF">Bahia </td>
+                    <td class="nume">14.873.064 </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="UF"> Paraná</td>
+                    <td class="nume">11.433.957 </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="UF"> Rio Grande do Sul</td>
+                    <td class="nume">11.377.239 </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="UF"> Pernanbuco </td>
+                    <td class="nume"> 9.557.071</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="UF"> Ceara</td>
+                    <td class="nume"> 9.132.078</td>
+                </tr>
+                <tr>
+                    <td> 9</td>
+                    <td class="UF"> Para</td>
+                    <td class="nume">8.602.865 </td>
+                </tr>
+                <tr>
+                    <td> 10</td>
+                    <td class="UF"> Santa Catarina</td>
+                    <td class="nume">7.164.788 </td>
+                </tr>
+                <tr>
+                    <td> 12</td>
+                    <td class="UF"> Maranhão</td>
+                    <td class="nume">7.075.181 </td>
+                </tr>
+                <tr>
+                    <td> 13</td>
+                    <td class="UF">Goias </td>
+                    <td class="nume">7.018.354 </td>
+                </tr>
 
 
 
-</table>
-    
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <th scope="row"> Total de habitantes </th>
+                    <td class="nume">170.587.380</td>
+                </tr>
+
+            </tfoot>
+
+
+        </table>
+
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum fugit suscipit sit ratione tempore asperiores omnis, expedita deserunt! Sapiente omnis minima assumenda architecto, ad culpa sit veniam earum est adipisci.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut excepturi optio ducimus ea neque impedit iure saepe omnis laboriosam molestias ab magni rem nemo nisi obcaecati tempore aliquid, fugit incidunt!llo
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magni, autem temporibus architecto maxime saepe, praesentium expedita, tempore facere ullam harum culpa quod consectetur nisi ducimus optio porro? Quasi, eaque!Lorem
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sit laborum alias voluptates nisi temporibus. Sapiente, sunt nostrum! Aperiam suscipit eum doloribus esse provident! Dolorem illum iusto adipisci necessitatibus modi!Loremlo
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor accusantium sequi aliquid sed, rem neque eos excepturi cumque laboriosam impedit, culpa nihil quae dolorum consequuntur. Maxime, consequuntur tempora? Veniam.
+
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum fugit suscipit sit ratione tempore asperiores omnis, expedita deserunt! Sapiente omnis minima assumenda architecto, ad culpa sit veniam earum est adipisci.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut excepturi optio ducimus ea neque impedit iure saepe omnis laboriosam molestias ab magni rem nemo nisi obcaecati tempore aliquid, fugit incidunt!llo
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magni, autem temporibus architecto maxime saepe, praesentium expedita, tempore facere ullam harum culpa quod consectetur nisi ducimus optio porro? Quasi, eaque!Lorem
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sit laborum alias voluptates nisi temporibus. Sapiente, sunt nostrum! Aperiam suscipit eum doloribus esse provident! Dolorem illum iusto adipisci necessitatibus modi!Loremlo
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor accusantium sequi aliquid sed, rem neque eos excepturi cumque laboriosam impedit, culpa nihil quae dolorum consequuntur. Maxime, consequuntur tempora? Veniam.
+            
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum fugit suscipit sit ratione tempore asperiores omnis, expedita deserunt! Sapiente omnis minima assumenda architecto, ad culpa sit veniam earum est adipisci.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut excepturi optio ducimus ea neque impedit iure saepe omnis laboriosam molestias ab magni rem nemo nisi obcaecati tempore aliquid, fugit incidunt!llo
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magni, autem temporibus architecto maxime saepe, praesentium expedita, tempore facere ullam harum culpa quod consectetur nisi ducimus optio porro? Quasi, eaque!Lorem
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sit laborum alias voluptates nisi temporibus. Sapiente, sunt nostrum! Aperiam suscipit eum doloribus esse provident! Dolorem illum iusto adipisci necessitatibus modi!Loremlo
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor accusantium sequi aliquid sed, rem neque eos excepturi cumque laboriosam impedit, culpa nihil quae dolorum consequuntur. Maxime, consequuntur tempora? Veniam.
+            
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum fugit suscipit sit ratione tempore asperiores omnis, expedita deserunt! Sapiente omnis minima assumenda architecto, ad culpa sit veniam earum est adipisci.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut excepturi optio ducimus ea neque impedit iure saepe omnis laboriosam molestias ab magni rem nemo nisi obcaecati tempore aliquid, fugit incidunt!llo
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magni, autem temporibus architecto maxime saepe, praesentium expedita, tempore facere ullam harum culpa quod consectetur nisi ducimus optio porro? Quasi, eaque!Lorem
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sit laborum alias voluptates nisi temporibus. Sapiente, sunt nostrum! Aperiam suscipit eum doloribus esse provident! Dolorem illum iusto adipisci necessitatibus modi!Loremlo
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor accusantium sequi aliquid sed, rem neque eos excepturi cumque laboriosam impedit, culpa nihil quae dolorum consequuntur. Maxime, consequuntur tempora? Veniam.
+            
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum fugit suscipit sit ratione tempore asperiores omnis, expedita deserunt! Sapiente omnis minima assumenda architecto, ad culpa sit veniam earum est adipisci.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut excepturi optio ducimus ea neque impedit iure saepe omnis laboriosam molestias ab magni rem nemo nisi obcaecati tempore aliquid, fugit incidunt!llo
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magni, autem temporibus architecto maxime saepe, praesentium expedita, tempore facere ullam harum culpa quod consectetur nisi ducimus optio porro? Quasi, eaque!Lorem
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sit laborum alias voluptates nisi temporibus. Sapiente, sunt nostrum! Aperiam suscipit eum doloribus esse provident! Dolorem illum iusto adipisci necessitatibus modi!Loremlo
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor accusantium sequi aliquid sed, rem neque eos excepturi cumque laboriosam impedit, culpa nihil quae dolorum consequuntur. Maxime, consequuntur tempora? Veniam.
+            
+        </p>
+
 </body>
+
 </html>
